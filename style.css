@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(240, 238, 238);
+}
+/*Navbar*/
+.container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+.container img{
+    max-width: 100%;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+    float: right;
+    position: relative;
+    top: -10px;
+    padding: 5px;
+}
+.nav a{
+    text-decoration: none;
+    margin: 5px;
+}
+/*First Section*/
+.section{
+    text-align: center;
+}
+.section img{
+max-width: 80%;
+margin:10%;
+}
+.email{
+    display: flex;
+    justify-content: center;
+   
+}
+.email input{
+    border-radius: 10px;
+    border: none;
+    padding:10px;
+}
+.email button{ 
+    margin: 10px 10px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(60, 60, 146);
+    padding: 10px;
+    border: none; 
+    border-radius: 10px;
+}
+/*Second Section*/
+.section2{
+    background-color: hsl(240,75%,98%);
+    margin-top: 100px;
+    position: relative;
+    text-align: center;
+}
+.section2::before{
+    content: '';
+    background-image: url('./images/bg-curve-mobile.svg');
+    position: absolute;
+    top: -30px;
+    left: 0;
+    height: 30px;
+    width: 100%;
+}
+.section2 .illustration2 img{
+    max-width: 80%;
+    margin:10%;  
+}
+.paragraph2{
+    margin: 5%;
+}
+.testimonialcard{
+    margin:10% 0;
+    padding: 10%;
+    text-align: left;
+    border-radius: 10px;
+   background-color:rgb(211, 202, 202);;
+}
+.testimonialname{
+    display: flex;
+    font-size: 10px;
+}
+.testimonialname img{
+    max-width: 50%;
+    border-radius: 30px 30px 30px 30px;
+}
+small{
+font-size: 10px;
+}
+/*Third Section*/
+.section3{
+    text-align: center;
+    background-color: rgb(122, 122, 161);
+}
+.paragraph3{
+    margin: 5%;
+}
+.lastsectionemail{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.lastsectionemail button, input{
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding:10px 20px;
+}
+.lastsectionemail button{
+    background-color: rgb(60, 60, 146);
+}
+/*Footer*/
+footer{
+    background-color: rgb(60, 60, 156);
+text-align: center;
+color: white;
+}
+.footersection{
+   padding: 5%;
+}
+.footerlist ul{
+list-style: none;
+position: relative;
+left: -5%;
+}
+.footerlist h1{
+    font-size: 20px;
+}
+.social{
+    position: relative;
+}
+.social a{
+font-size: 20px;
+color: white;
+margin: 2%;
+}
+@media screen and (min-width:636px){
+    .footerlist ul{
+        position: relative;
+        left:-3%;
+    }
+}
+@media all and (min-width:768px) and (max-width: 800px){
+    .section2::before{
+        width: 100%;
+       background-size: cover;
+    }
+}
+@media screen and (min-width: 1020px){
+    .nav ul{
+        font-size: 20px;
+    }
+   .section{
+       display: flex;
+       flex-direction: row-reverse;
+   }
+   .paragraph{
+       margin: 10%;
+   }
+   .paragraph button{
+       margin: 10px;
+   }
+   .section2{
+       display: flex;
+       flex-direction: row-reverse;
+   }
+   .paragraph2{
+       margin: 10%;
+       text-align: left;
+   }
+   .section2::before{
+    content: '';
+    background-image: url('./images/bg-curve-desktop.svg');
+    position: absolute;
+    top: -60px;
+    left: 0;
+    height: 60px;
+    width: 100%;
+   }
+   .testimonialcard{
+       max-width: 100%;
+   }
+   .section3{
+       text-align: left;
+       display: flex;
+       justify-content: space-around;
+   }
+   .paragraph3{
+       margin: auto;
+       padding: 5% 5%;
+   }
+   .lastsectionemail{
+       margin: 0 5%;
+   }
+   footer{
+       color: white;
+   }
+   .footersection{
+       display: flex;
+       position: relative;
+       margin: auto;
+   }
+   .footerlist{
+       display: flex;
+       font-size: 15px;
+       position: relative;
+       margin: auto;
+   }
+   .footerlist ul{
+    position: relative;
+    left: 50%;
+   }
+   .footerlist h1{
+       font-size: 15px;
+   }
+   .social{
+       display: flex;
+       margin: auto;
+   }
+   .social a{
+       margin: 0 5%;
+   }
+}
